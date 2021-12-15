@@ -3718,3 +3718,7 @@ html {
 .text-sm {
 	font-size: 1rem;
 }
+
+.bullet-container {
+	padding-bottom: 3px;
+}
