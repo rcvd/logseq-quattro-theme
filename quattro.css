@@ -1479,13 +1479,13 @@ textarea::selection {
 }
 
 #global-graph button:hover {
-	background-color: 		var(--cl-electric);
+	background-color: 		transparent;
 	border-top: 			transparent;
 	border-right: 			transparent;
 	border-bottom: 			transparent;
 	border-left: 			transparent;
 	border-radius: 			5px;
-	color: 					var(--cl-white);
+	color: 					var(--cl-electric);
 }
 .dark-theme #global-graph button:hover,  html[data-theme=dark] #global-graph button:hover {
 	background-color: 		transparent;
@@ -1497,7 +1497,7 @@ textarea::selection {
 }
 
 #global-graph button {
-	background-color: 		var(--cl-dove);
+	background-color: 		transparent;
 	border-top: 			transparent;
 	border-right: 			transparent;
 	border-bottom: 			transparent;
