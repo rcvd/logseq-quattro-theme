@@ -1,0 +1,24 @@
+{
+  "name": "Quattro",
+  "author": "Alexander Rink",
+  "version": "0.0.1",
+  "description": "Where your attention goes, your time goes. An iA Writer inspired theme for Logseq.",
+  "logseq": {
+    "themes": [
+      {
+        "name": "Quattro - Light",
+        "url": "./quattro.css",
+        "description": "Where your attention goes, your time goes. An iA Writer inspired theme for Logseq.",
+        "mode": "light"
+      },
+      {
+        "name": "Quattro - Dark",
+        "url": "./quattro.css",
+        "description": "Where your attention goes, your time goes. An iA Writer inspired theme for Logseq.",
+        "mode": "dark"
+      }
+    ],
+    "id": "bear",
+    "icon": "./icon.png"
+  }
+}
