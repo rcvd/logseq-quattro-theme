@@ -3772,3 +3772,7 @@ html {
 .blocks-container .items-baseline {
 	align-items: self-end;
 }
+
+.left-sidebar-inner .new-page{
+	color: var(--cl-nero);
+}
