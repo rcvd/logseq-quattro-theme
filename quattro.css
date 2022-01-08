@@ -3776,3 +3776,22 @@ html {
 .left-sidebar-inner .new-page{
 	color: var(--cl-nero);
 }
+
+/* Style Fixes for mobile */
+.dark-theme,
+html[data-theme=dark] {
+	--ls-primary-background-color: var(--cl-vulcan);
+}
+
+.light-theme,
+html[data-theme=light] {
+	--ls-primary-background-color: var(--cl-blackhaze);
+}
+
+#mobile-editor-toolbar {
+    background-color: #1e2022;
+}
+
+#mobile-editor-toolbar button {
+    background-color: #fbfbfb;
+}
