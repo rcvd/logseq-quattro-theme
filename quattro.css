@@ -3791,3 +3791,13 @@ html {
 @media (min-width: 640px) .sm\:mr-2 {
   margin-right: 8px;
 }
+
+
+.block-children-left-border {
+  width: 2px;
+}
+
+.block-children-left-border:hover {
+  width: 4px;
+}
+
