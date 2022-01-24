@@ -3522,7 +3522,7 @@ a svg {
 	background-color: 		var(--cl-lilywhite);
 }
 .dark-theme .ui__modal-panel .panel-content::-webkit-scrollbar-track,  html[data-theme=dark] .ui__modal-panel .panel-content::-webkit-scrollbar-track {
-	background-color: 		var(--cl-vulcan);
+	background-color: 		var(--cl-mineshaft);
 }
 
 .ui__modal-panel .panel-content::-webkit-scrollbar-thumb {
