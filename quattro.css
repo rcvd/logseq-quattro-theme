@@ -472,6 +472,40 @@ html[data-theme=light] {
 	border-left: 			1px solid var(--cl-nero);
 }
 
+.block-ref {
+	background-color: 		var(--cl-);
+	border-top: 			var(--cl-);
+	border-right: 			var(--cl-);
+	border-bottom: 			1px solid var(--cl-alto);
+	border-left: 			var(--cl-);
+	color: 					var(--cl-nero);
+}
+.dark-theme .block-ref,  html[data-theme=dark] .block-ref {
+	background-color: 		var(--cl-);
+	border-top: 			var(--cl-);
+	border-right: 			var(--cl-);
+	border-bottom: 			1px solid var(--cl-nero);
+	border-left: 			var(--cl-);
+	color: 					var(--cl-iron);
+}
+
+.block-ref:hover {
+	background-color: 		var(--cl-);
+	border-top: 			var(--cl-);
+	border-right: 			var(--cl-);
+	border-bottom: 			1px solid var(--cl-alto);
+	border-left: 			var(--cl-);
+	color: 					var(--cl-dove);
+}
+.dark-theme .block-ref:hover,  html[data-theme=dark] .block-ref:hover {
+	background-color: 		var(--cl-);
+	border-top: 			var(--cl-);
+	border-right: 			var(--cl-);
+	border-bottom: 			1px solid var(--cl-nero);
+	border-left: 			var(--cl-);
+	color: 					var(--cl-storm);
+}
+
 .open-block-ref-link {
 	background-color: 		var(--cl-white);
 	border-top: 			1px solid var(--cl-alto);
@@ -527,7 +561,7 @@ a:hover>.bullet-container {
 	background-color: 		var(--cl-lilywhite);
 }
 .dark-theme a:hover>.bullet-container,  html[data-theme=dark] a:hover>.bullet-container {
-	background-color: 		var(--cl-iron);
+	background-color: 		var(--cl-stack);
 }
 
 .bullet-container .bullet {
@@ -598,6 +632,13 @@ div[data-refs-self*='"card"'] {
 	border-left: 			1px solid var(--cl-nero);
 	box-shadow: 			none!important;
 	--webkit-box-shadow: 	none!important;
+}
+
+.rotating-arrow svg {
+	color: 					var(--cl-silver);
+}
+.dark-theme .rotating-arrow svg,  html[data-theme=dark] .rotating-arrow svg {
+	color: 					var(--cl-chicago);
 }
 
 .form-checkbox:checked {
@@ -1038,16 +1079,20 @@ iframe {
 }
 
 .page-ref:hover {
+	border-bottom: 			var(--cl-);
 	color: 					var(--cl-electric);
 }
 .dark-theme .page-ref:hover,  html[data-theme=dark] .page-ref:hover {
+	border-bottom: 			var(--cl-);
 	color: 					var(--cl-disco);
 }
 
 .page-ref {
+	border-bottom: 			var(--cl-);
 	color: 					var(--cl-electric);
 }
 .dark-theme .page-ref,  html[data-theme=dark] .page-ref {
+	border-bottom: 			var(--cl-);
 	color: 					var(--cl-disco);
 }
 
@@ -1687,6 +1732,7 @@ a svg {
 	border-radius: 			5px;
 	color: 					var(--cl-nero);
 	font-family: 			'iA Writer Quattro S', sans-serif;
+	font-size: 				;
 }
 .dark-theme #left-sidebar .favorites ul .favorite-item a,  html[data-theme=dark] #left-sidebar .favorites ul .favorite-item a {
 	background-color: 		transparent;
@@ -1732,6 +1778,7 @@ a svg {
 #left-sidebar .favorites > div.header a {
 	color: 					var(--cl-nero);
 	font-family: 			'iA Writer Quattro S', sans-serif;
+	font-size: 				;
 	font-weight: 			;
 	opacity: 				1!important;
 }
@@ -1851,6 +1898,7 @@ a svg {
 #left-sidebar nav[aria-label='Sidebar'] div.relative a span {
 	color: 					var(--cl-nero);
 	font-family: 			'iA Writer Quattro S', sans-serif;
+	font-size: 				;
 	font-weight: 			;
 }
 .dark-theme #left-sidebar nav[aria-label='Sidebar'] div.relative a span,  html[data-theme=dark] #left-sidebar nav[aria-label='Sidebar'] div.relative a span {
@@ -1913,6 +1961,7 @@ a svg {
 #left-sidebar .nav-header > div a span {
 	color: 					var(--cl-nero);
 	font-family: 			'iA Writer Quattro S', sans-serif;
+	font-size: 				;
 	font-weight: 			;
 }
 .dark-theme #left-sidebar .nav-header > div a span,  html[data-theme=dark] #left-sidebar .nav-header > div a span {
@@ -2015,6 +2064,7 @@ a svg {
 	border-radius: 			5px;
 	color: 					var(--cl-nero);
 	font-family: 			'iA Writer Quattro S', sans-serif;
+	font-size: 				;
 }
 .dark-theme #left-sidebar .recent ul .recent-item a,  html[data-theme=dark] #left-sidebar .recent ul .recent-item a {
 	background-color: 		transparent;
@@ -2088,6 +2138,7 @@ a svg {
 #left-sidebar .recent > div.header a {
 	color: 					var(--cl-nero);
 	font-family: 			'iA Writer Quattro S', sans-serif;
+	font-size: 				;
 	font-weight: 			;
 	opacity: 				1!important;
 }
@@ -3583,6 +3634,17 @@ a svg {
 	color: 					var(--cl-iron);
 }
 
+/* Fixes for block alignments */
+#lazy-blocks .flex.pr-2 {
+  justify-content: flex-start!important;
+  align-items: flex-start!important;
+}
+
+.block-content,
+textarea {
+  line-height: 24px;
+}
+
 /* Fixes for command palette and search */
 .cp__palette-main .chosen {
   background: transparent;
@@ -3608,7 +3670,7 @@ a svg {
 
 .ui__modal-panel {
   background: transparent !important;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 /* Hide first, empty item on graph dropdown */
@@ -3701,7 +3763,7 @@ a {
 .new-page a.item .ti,
 .cp__sidebar-left-layout nav[aria-label="Sidebar"] div.relative a .ti,
 .cp__sidebar-left-layout .nav-header > div a .ti {
-  padding-bottom: 4px;
+  padding-bottom: 3px;
 }
 
 .white-theme .form-checkbox:checked,
@@ -3780,12 +3842,9 @@ a.tag {
   background: transparent;
 }
 
-html {
-  font-size: 14px;
-}
-
-.text-sm {
-  font-size: 1rem;
+.block-control, 
+.block-control:hover {
+  min-height: unset;
 }
 
 @media (min-width: 640px) .sm\:mr-2 {
@@ -3800,4 +3859,20 @@ html {
 .block-children-left-border:hover {
   width: 4px;
   left:  -1px;
+}
+
+#logseq-journals-calendar_iframe {
+  background: transparent; 
+}
+.ui__modal-panel {
+  background: transparent !important;
+  border-radius: 5px;
+}
+
+html {
+  font-size: 14px;
+}
+
+.text-sm {
+  font-size: 1rem;
 }
