@@ -2334,19 +2334,75 @@ a svg {
 	color: 					var(--cl-storm);
 }
 
-#main-content-container .absolute-modal #ui__ac::-webkit-scrollbar-track {
+#main-content-container .absolute-modal::-webkit-scrollbar-track {
 	background-color: 		var(--cl-lilywhite);
 }
-.dark-theme #main-content-container .absolute-modal #ui__ac::-webkit-scrollbar-track,  html[data-theme=dark] #main-content-container .absolute-modal #ui__ac::-webkit-scrollbar-track {
+.dark-theme #main-content-container .absolute-modal::-webkit-scrollbar-track,  html[data-theme=dark] #main-content-container .absolute-modal::-webkit-scrollbar-track {
 	background-color: 		var(--cl-mineshaft);
 }
 
-#main-content-container .absolute-modal #ui__ac::-webkit-scrollbar-thumb {
+#main-content-container .absolute-modal::-webkit-scrollbar-thumb {
 	background-color: 		var(--cl-dove);
 	border-radius: 			5px;
 }
-.dark-theme #main-content-container .absolute-modal #ui__ac::-webkit-scrollbar-thumb,  html[data-theme=dark] #main-content-container .absolute-modal #ui__ac::-webkit-scrollbar-thumb {
+.dark-theme #main-content-container .absolute-modal::-webkit-scrollbar-thumb,  html[data-theme=dark] #main-content-container .absolute-modal::-webkit-scrollbar-thumb {
 	background-color: 		var(--cl-stack);
+}
+
+#pdf-layout-container[data-theme=light] .hls-text-region-item[data-color=blue] {
+	background-color: 		var(--cl-);
+}
+.dark-theme #pdf-layout-container[data-theme=light] .hls-text-region-item[data-color=blue],  html[data-theme=dark] #pdf-layout-container[data-theme=light] .hls-text-region-item[data-color=blue] {
+	background-color: 		var(--cl-);
+}
+
+#pdf-layout-container[data-theme=dark] .hls-text-region-item[data-color=blue] {
+	background-color: 		var(--cl-);
+}
+.dark-theme #pdf-layout-container[data-theme=dark] .hls-text-region-item[data-color=blue],  html[data-theme=dark] #pdf-layout-container[data-theme=dark] .hls-text-region-item[data-color=blue] {
+	background-color: 		var(--cl-);
+}
+
+#pdf-layout-container[data-theme=light] {
+	background-color: 		var(--cl-shark);
+}
+.dark-theme #pdf-layout-container[data-theme=light],  html[data-theme=dark] #pdf-layout-container[data-theme=light] {
+	background-color: 		var(--cl-vulcan);
+}
+
+#pdf-layout-container[data-theme=warm] {
+	background-color: 		var(--cl-);
+}
+.dark-theme #pdf-layout-container[data-theme=warm],  html[data-theme=dark] #pdf-layout-container[data-theme=warm] {
+	background-color: 		var(--cl-);
+}
+
+#pdf-layout-container[data-theme=dark] {
+	background-color: 		var(--cl-lilywhite);
+}
+.dark-theme #pdf-layout-container[data-theme=dark],  html[data-theme=dark] #pdf-layout-container[data-theme=dark] {
+	background-color: 		var(--cl-blackhaze);
+}
+
+#pdf-layout-container[data-theme=light] .textLayer {
+	background-color: 		var(--cl-vulcan);
+}
+.dark-theme #pdf-layout-container[data-theme=light] .textLayer,  html[data-theme=dark] #pdf-layout-container[data-theme=light] .textLayer {
+	background-color: 		var(--cl-shark);
+}
+
+#pdf-layout-container[data-theme=warm] .textLayer {
+	background-color: 		var(--cl-);
+}
+.dark-theme #pdf-layout-container[data-theme=warm] .textLayer,  html[data-theme=dark] #pdf-layout-container[data-theme=warm] .textLayer {
+	background-color: 		var(--cl-);
+}
+
+#pdf-layout-container[data-theme=dark] .textLayer {
+	background-color: 		var(--cl-blackhaze);
+}
+.dark-theme #pdf-layout-container[data-theme=dark] .textLayer,  html[data-theme=dark] #pdf-layout-container[data-theme=dark] .textLayer {
+	background-color: 		var(--cl-lilywhite);
 }
 
 .ui__button[intent=logseq]:hover {
@@ -3722,15 +3778,8 @@ a {
   transition: none;
 }
 
-/* Fix overflow for command, page and block menu */
-.absolute-modal {
-  overflow-y: hidden;
-}
-
 .absolute-modal #ui__ac {
   margin-right: 0.25rem;
-  overflow-y: auto;
-  max-height: 317px;
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
