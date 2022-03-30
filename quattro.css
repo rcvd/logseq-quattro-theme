@@ -928,7 +928,7 @@ div[data-refs-self*='"card"'] {
 	color: 					var(--cl-iron);
 }
 
-*:is(.editor-inner .uniline-block.h1, .editor-inner .h1, .ls-block h1) {
+*:is(.editor-inner .uniline-block.h1:not(.block-ref *), .editor-inner .h1:not(.block-ref *), .ls-block h1:not(.block-ref *)) {
 	border-bottom: 			transparent;
 	color: 					var(--cl-nero);
 	font-family: 			'iA Writer Quattro S', sans-serif;
@@ -936,12 +936,12 @@ div[data-refs-self*='"card"'] {
 	font-style: 			;
 	font-weight: 			500!important;
 }
-.dark-theme *:is(*:is(.editor-inner .uniline-block.h1, .editor-inner .h1, .ls-block h1)), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h1, .editor-inner .h1, .ls-block h1)) {
+.dark-theme *:is(*:is(.editor-inner .uniline-block.h1:not(.block-ref *), .editor-inner .h1:not(.block-ref *), .ls-block h1:not(.block-ref *))), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h1:not(.block-ref *), .editor-inner .h1:not(.block-ref *), .ls-block h1:not(.block-ref *))) {
 	border-bottom: 			var(--cl-500);
 	color: 					var(--cl-iron);
 }
 
-*:is(.editor-inner .uniline-block.h2, .editor-inner .h2, .ls-block h2) {
+*:is(.editor-inner .uniline-block.h2:not(.block-ref *), .editor-inner .h2:not(.block-ref *), .ls-block h2:not(.block-ref *)) {
 	border-bottom: 			transparent;
 	color: 					var(--cl-nero);
 	font-family: 			'iA Writer Quattro S', sans-serif;
@@ -949,52 +949,52 @@ div[data-refs-self*='"card"'] {
 	font-style: 			;
 	font-weight: 			500!important;
 }
-.dark-theme *:is(*:is(.editor-inner .uniline-block.h2, .editor-inner .h2, .ls-block h2)), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h2, .editor-inner .h2, .ls-block h2)) {
+.dark-theme *:is(*:is(.editor-inner .uniline-block.h2:not(.block-ref *), .editor-inner .h2:not(.block-ref *), .ls-block h2:not(.block-ref *))), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h2:not(.block-ref *), .editor-inner .h2:not(.block-ref *), .ls-block h2:not(.block-ref *))) {
 	border-bottom: 			var(--cl-500);
 	color: 					var(--cl-iron);
 }
 
-*:is(.editor-inner .uniline-block.h3, .editor-inner .h3, .ls-block h3) {
+*:is(.editor-inner .uniline-block.h3:not(.block-ref *), .editor-inner .h3:not(.block-ref *), .ls-block h3:not(.block-ref *)) {
 	color: 					var(--cl-nero);
 	font-family: 			'iA Writer Quattro S', sans-serif;
 	font-size: 				1.1rem;
 	font-style: 			;
 	font-weight: 			500!important;
 }
-.dark-theme *:is(*:is(.editor-inner .uniline-block.h3, .editor-inner .h3, .ls-block h3)), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h3, .editor-inner .h3, .ls-block h3)) {
+.dark-theme *:is(*:is(.editor-inner .uniline-block.h3:not(.block-ref *), .editor-inner .h3:not(.block-ref *), .ls-block h3:not(.block-ref *))), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h3:not(.block-ref *), .editor-inner .h3:not(.block-ref *), .ls-block h3:not(.block-ref *))) {
 	color: 					var(--cl-iron);
 }
 
-*:is(.editor-inner .uniline-block.h4, .editor-inner .h4, .ls-block h4) {
+*:is(.editor-inner .uniline-block.h4:not(.block-ref *), .editor-inner .h4:not(.block-ref *), .ls-block h4:not(.block-ref *)) {
 	color: 					var(--cl-nero);
 	font-family: 			'iA Writer Quattro S', sans-serif;
 	font-size: 				1rem;
 	font-style: 			;
 	font-weight: 			500!important;
 }
-.dark-theme *:is(*:is(.editor-inner .uniline-block.h4, .editor-inner .h4, .ls-block h4)), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h4, .editor-inner .h4, .ls-block h4)) {
+.dark-theme *:is(*:is(.editor-inner .uniline-block.h4:not(.block-ref *), .editor-inner .h4:not(.block-ref *), .ls-block h4:not(.block-ref *))), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h4:not(.block-ref *), .editor-inner .h4:not(.block-ref *), .ls-block h4:not(.block-ref *))) {
 	color: 					var(--cl-iron);
 }
 
-*:is(.editor-inner .uniline-block.h5, .editor-inner .h5, .ls-block h5) {
+*:is(.editor-inner .uniline-block.h5:not(.block-ref *), .editor-inner .h5:not(.block-ref *), .ls-block h5:not(.block-ref *)) {
 	color: 					var(--cl-nero);
 	font-family: 			'iA Writer Quattro S', sans-serif;
 	font-size: 				1rem;
 	font-style: 			;
 	font-weight: 			500!important;
 }
-.dark-theme *:is(*:is(.editor-inner .uniline-block.h5, .editor-inner .h5, .ls-block h5)), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h5, .editor-inner .h5, .ls-block h5)) {
+.dark-theme *:is(*:is(.editor-inner .uniline-block.h5:not(.block-ref *), .editor-inner .h5:not(.block-ref *), .ls-block h5:not(.block-ref *))), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h5:not(.block-ref *), .editor-inner .h5:not(.block-ref *), .ls-block h5:not(.block-ref *))) {
 	color: 					var(--cl-iron);
 }
 
-*:is(.editor-inner .uniline-block.h6, .editor-inner .h6, .ls-block h6) {
+*:is(.editor-inner .uniline-block.h6:not(.block-ref *), .editor-inner .h6:not(.block-ref *), .ls-block h6:not(.block-ref *))  {
 	color: 					var(--cl-nero);
 	font-family: 			'iA Writer Quattro S', sans-serif;
 	font-size: 				1rem;
 	font-style: 			;
 	font-weight: 			500!important;
 }
-.dark-theme *:is(*:is(.editor-inner .uniline-block.h6, .editor-inner .h6, .ls-block h6)), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h6, .editor-inner .h6, .ls-block h6)) {
+.dark-theme *:is(*:is(.editor-inner .uniline-block.h6:not(.block-ref *), .editor-inner .h6:not(.block-ref *), .ls-block h6:not(.block-ref *)) ), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h6:not(.block-ref *), .editor-inner .h6:not(.block-ref *), .ls-block h6:not(.block-ref *)) ) {
 	color: 					var(--cl-iron);
 }
 
